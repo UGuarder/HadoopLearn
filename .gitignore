@@ -2,5 +2,7 @@ target/
 *.class
 .*
 # Package Files #
+.settings/
+.project
 *.war
 *.ear
