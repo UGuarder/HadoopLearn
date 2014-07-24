@@ -1,7 +1,6 @@
-target/*
+target/
 *.class
 .*
 # Package Files #
 *.war
 *.ear
-target
