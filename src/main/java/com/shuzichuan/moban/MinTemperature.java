@@ -64,6 +64,8 @@ public class MinTemperature {
 		@Override
 		protected void reduce(Text key, Iterable<IntWritable> values,Context context)
 				throws IOException, InterruptedException {
+			System.err.print("ce shi error  see logs");
+			context.setStatus("reduce cuocuo");
 			System.out.println("========================reduce============================");
 			int minValue = Integer.MAX_VALUE;
 			for(IntWritable value:values){
