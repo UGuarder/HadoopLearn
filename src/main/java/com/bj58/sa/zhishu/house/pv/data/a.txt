@@ -1,0 +1,42 @@
+来自58Wiki
+跳转到： 导航, 搜索 
+目录 [隐藏] 
+1 原始日志格式及说明（未清洗） 
+2 清洗后日志hdfs目录path 
+3 TrackInfo实体说明 
+4 点击流工具类说明与下载 
+4.1 结构介绍 
+4.2 Maven地址 
+4.3 版本更新及说明 
+ 
+[编辑] 原始日志格式及说明（未清洗） http://wiki.58corp.com/index.php?title=TrackLogFormat
+[编辑] 清洗后日志hdfs目录path /dsap/rawdata/track.58.com/yyyyMMdd
+[1]
+[编辑] TrackInfo实体说明 编号  字段名称  字段说明  
+0  tkCookieID  cookie的id 用于统计UV  
+1  tkCatePath  cateid的fullpaths 注：表现分类（前面补0表示全站）如：0,1,8  
+2  tkAreaPath  areaid的fullpaths 注：表现地域（前面补0表示全站）如：0,1  
+3  tkUrl  当前访问url  
+4  tkEpoch  当前时间戳（UNIX生秒数） 注：单位s 精确到ms  
+5  tkUserIp  客户端用户ip  
+6  tkSiteName  站点名称  
+7  tkPageVersion  前端页面版本  
+8  tkLoginUid  当前登陆用户id  
+9  tkPostCount  列表页结果数 注：索引里的结果数，并非列表页真实展现的结果数  
+10  tkOutKWord  站外搜索关键词 注：常见的几个搜索引擎  
+11  tkPageType  当前页面业务类型(list、detail、post等) 注：部分业务线特殊标识，如：jianli_detail  
+12  tkRefDomain  来路域名  
+13  tkWindowSize  客户端页面大小  
+14  tkReferrer  来路访问url  
+15  tkInfoUid  当前帖子的所属用户id(发帖人id)  
+16  tkPm58  最终页跳转参数 注：pm58 seo相关参数  
+17  tkInKWord  站内搜索关键词  
+18  tkLoadTime  加载时间  
+19  tkStatus  Track访问状态  
+20  tkTrackURL  公共参数集合 注：源代码中_trackURL里的内容  
+21  tkSupplyCount  特殊参数集合 注：源代码中json4fe.supplycount的内容  
+22  tkBusine  业务线的fullpaths 注：数据部自定义的 类似与cmcs  
+23  tkGautma  ga的判断唯一用户参数  
+24  tkUnitParams  单元参数 注：部分类别的详情页有 tinfo的大部分的参（90%）  
+25  tkQueryParams  query串 注：只有列表页有 json4fe.smsc 真实的查询串  
+26  tkTrackVersion  清洗版本号 注：日志的版本编号  
